@@ -6,6 +6,14 @@ public class happy_birthday {
 
 	public static void main(String[] args) {
 		cls();
+		for (int i = 0; i < message.length(); i++) {
+			System.out.print(message.charAt(i));
+			try {
+				Thread.sleep(50);
+			} catch (InterruptedException _) {
+				Thread.currentThread().interrupt();
+			}
+		}
 		while (true) {
 			calcColours();
 			cls();
